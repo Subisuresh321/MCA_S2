@@ -118,6 +118,7 @@ job_id, salary,manager_id,department_id)values(112,'Paul','Newtine','paul.@sqltu
 delete from dept where department_id=5; -- 13
 
 select first_name from employees where dayofweek(hire_date)=5; -- 14
+--
 
 
 
