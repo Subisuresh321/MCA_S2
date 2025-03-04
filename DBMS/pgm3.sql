@@ -71,6 +71,13 @@ INSERT INTO PREREQUISITE (Course_number, Prerequisite_number) VALUES
 ('CS3380', 'CS3320'),
 ('CS3380', 'MATH2410'),
 ('CS3320', 'CS1310');
+-- 1) Retrieve the list of all courses and grades of “Smith”.
+select COURSE.Course_name,GRADE_REPORT.Grade from STUDENT  join GRADE_REPORT on STUDENT.Student_number=GRADE_REPORT.Student_number join SECTION on GRADE_REPORT.Section_identifier=SECTION.Section_identifier join COURSE on SECTION.Course_number=COURSE.Course_number where STUDENT.Name='Smith'; 
 
+-- 2) List the names of students who took the section of ‘Database’ course offered in fall 2008 and their grades in that section.
 
+select STUDENT.Name, GRADE_REPORT.GRADE from STUDENT  join GRADE_REPORT on STUDENT.Student_number=GRADE_REPORT.Student_number join SECTION on GRADE_REPORT.Section_identifier=SECTION.Section_identifier join COURSE on SECTION.Course_number=COURSE.Course_number where COURSE.Course_name='database' and SECTION.Semester='Fall' and SECTION.year=08;
 
+-- 3) List the prerequisites of the ‘Database’ course.
+
+select PREREQUISITE.prerequisite_number, COURSE.Course_name from COURSE join PREREQUISITE on COURSE.Course_number=PREREQUISITE.Course_number where COURSE.Course_name='database' ;
