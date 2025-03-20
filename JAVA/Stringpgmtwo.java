@@ -4,6 +4,6 @@ public class Stringpgmtwo {
         StringBuffer str=new StringBuffer("abc");
         System.out.println(str);
         System.out.println(str.append("ok"));
-        System.out.println(str.insert("okk"));
+        System.out.println(str.insert(3,"okk"));
     }
 }
