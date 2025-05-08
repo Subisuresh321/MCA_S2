@@ -6,7 +6,7 @@ public class Array {
         System.out.println("Enter the number of Elements: ");
         size=sc.nextInt();
         int arr[]= new int[size];
-        for(int i=2;i<size;i++)
+        for(int i=0;i<size;i++)
         {
             arr[i]=i;
         }
