@@ -1,0 +1,1 @@
+CREATE DEFINER=`root`@`localhost` TRIGGER `t2` AFTER INSERT ON `sales` FOR EACH ROW update product set stock=stock-new.quantity where pid=new.pid
