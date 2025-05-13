@@ -70,5 +70,16 @@ create table record(
     pre_stock int,
     post_stock int,
     foreign key(pid) references product(pid)
-    )
+    );
+update product set stock=50 where pid=201;
+update product set stock=25 where pid=202;
+
+insert into sales values
+(101,201,20),
+(103,201,8),
+(100,202,30);
+
+select * from record;
+
+
 
