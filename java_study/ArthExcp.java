@@ -5,7 +5,7 @@ public class ArthExcp {
         try
         {
             if(b==0)
-            throw new ArithmeticException("Division by sorry not walk (nadakilla)");
+            throw new ArithmeticException("Division by zero not walk (nadakilla)");
             else
             System.out.println("The result is "+(a/b));
         }
