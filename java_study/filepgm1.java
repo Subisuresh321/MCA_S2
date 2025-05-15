@@ -6,7 +6,7 @@ public class filepgm1 {
         File[] subfiles = dir.listFiles();
         if (subfiles != null) {
             for (File x : subfiles) {
-                System.out.println("-"+x.getName());
+                System.out.println("-"+x.getName());`
                 if(x.isDirectory())
                 ls(x);
             }

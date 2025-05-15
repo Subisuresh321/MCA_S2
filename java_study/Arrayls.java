@@ -9,8 +9,9 @@ public class Arrayls {
         int i;
         String str;
         while(true){
-             System.out.print("\n----------------\n1: add\n2: size\n3: search by index\n4: find index\n5: contains\n6: remove\n7: remove by index\n8: display\n9: clear search\n0:Exit\n----------------\nEnter your choice: "); 
+             System.out.print("\n----------------\n1: add\n2: size\n3: search by index\n4: find index\n5: contains\n6: remove\n7: remove by index\n8: display\n9: clear \n0:Exit\n----------------\nEnter your choice: "); 
             op=sc.nextInt();
+            sc.nextLine();
             switch (op) {
                 case 1:
                     System.out.println("Enter the string to add: ");
@@ -23,6 +24,7 @@ public class Arrayls {
                 case 3:
                     System.out.println("Enter the index to search: ");
                     i=sc.nextInt();
+                    sc.nextLine();
                     System.out.println("The element at "+i+" is: "+s.get(i));
                     break;
                 case 4:
@@ -43,6 +45,7 @@ public class Arrayls {
                 case 7:
                     System.out.println("Enter the index of element to remove: ");
                     i=sc.nextInt();
+                    sc.nextLine();
                     s.remove(i);
                     break;
                 case 8:

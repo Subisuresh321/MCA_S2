@@ -39,7 +39,9 @@ class Stack<T> {
     boolean empty() {
         return top == -1;
     }
-
+    void display(){
+        System.out.println(A);
+    }
     public String toString() {
         if (!A.isEmpty()) {
             String ans = "";
@@ -75,7 +77,8 @@ public class generic_stack {
                     s.pop();
                     break;
                 case 3:
-                    System.out.println("The elements of stack are: " + s);
+                    System.out.println("The elements of stack are: ");
+                    s.display();
                     break;
                 case 4:
                     System.out.println("Top is: " + s.top());
