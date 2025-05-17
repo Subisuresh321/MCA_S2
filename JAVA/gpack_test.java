@@ -14,7 +14,7 @@ public class gpack_test {
         System.out.println("Enter the lenght and breadth for Rectangle: ");
         l=sc.nextInt();
         b=sc.nextInt();
-        Graphics.Rectangle rec= new Rectangle(l, b);
+        Graphics.Rectangle rec= new Graphics.Rectangle(l, b);
         rec.area();
 
         int s;
