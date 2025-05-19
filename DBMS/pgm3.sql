@@ -80,4 +80,4 @@ select STUDENT.Name, GRADE_REPORT.GRADE from STUDENT  join GRADE_REPORT on STUDE
 
 -- 3) List the prerequisites of the ‘Database’ course.
 
-select PREREQUISITE.prerequisite_number, COURSE.Course_name from COURSE join PREREQUISITE on COURSE.Course_number=PREREQUISITE.Course_number where COURSE.Course_name='database' ;
+select PREREQUISITE.prerequisite_number, COURSE.Course_name from COURSE join PREREQUISITE on COURSE.Course_number=PREREQUISITE.prerequisite_number where prerequisite.course_number=(select course_number from Course where course_name="Database");
